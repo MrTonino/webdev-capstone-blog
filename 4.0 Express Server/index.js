@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Render the home page with the form
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs", { posts: posts });
 });
 
 // Handle the form submission

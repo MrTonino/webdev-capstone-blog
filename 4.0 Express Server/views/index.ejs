@@ -15,5 +15,14 @@
     </form>
 
     <!-- Display existing posts or other content -->
+    <h2>Existing Posts</h2>
+    <ul>
+      <% posts.forEach((post)=>{%>
+      <li>
+        <h3><%= post.title %></h3>
+        <p><%= post.content %></p>
+      </li>
+      <%});%>
+    </ul>
   </body>
 </html>
